@@ -1,11 +1,17 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import TodoItemCreator from './components/AddTodo';
+import TodoList from './components/TodoList';
+import TodoListFilter from './components/TodoListFilter';
+import TodoListStats from './components/TodoListStats';
+import './style.css';
 
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <TodoListStats />
+      <TodoListFilter />
+      <TodoItemCreator />
+      <TodoList />
     </div>
   );
 }
